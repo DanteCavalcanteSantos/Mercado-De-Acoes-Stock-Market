@@ -1,0 +1,78 @@
+Sony (PlayStation) - SONY
+Microsoft (Xbox) - MSFT
+Nintendo - NTDOY (OTC)
+Electronic Arts (EA) - EA
+Ubisoft - UBSFY (OTC)
+
+Erro de atribuição de tipos
+
+
+
+Formulas DAX:
+
+Volatilidade Agregada = 
+DIVIDE(
+    SUM(Agrupado[High]) - SUM(Agrupado[Low]),
+    SUM(Agrupado[Close/Last])
+)
+
+
+Volatilidade Agregada = 
+DIVIDE(
+    SUMX(
+        FILTER(Agrupado, NOT(ISBLANK(Agrupado[High]) && NOT(ISBLANK(Agrupado[Low])))),
+        Agrupado[High] - Agrupado[Low]
+    ),
+    SUM(Agrupado[Close/Last])
+)
+
+
+1. Análises de Desempenho Individual
+Tendências de Preço
+Avalie como os preços das ações variaram ao longo do tempo. Use gráficos como linhas de tendência ou médias móveis para identificar comportamentos gerais.
+
+Volatilidade
+Calcule métricas como desvio padrão ou amplitude diária (máximo - mínimo) para entender o risco associado às ações.
+
+Retorno Médio e Acumulado
+Determine o retorno médio diário, semanal, ou mensal, e calcule o retorno acumulado em períodos específicos.
+
+Volume de Negociação
+Analise se há períodos de maior ou menor negociação e explore correlações com eventos específicos.
+
+2. Comparações Entre Empresas
+Desempenho Relativo
+Compare o retorno das ações de cada empresa em períodos iguais para entender quem teve o melhor desempenho.
+
+Correlação entre Ações
+Avalie se os movimentos das ações estão relacionados, o que pode indicar dependências ou tendências comuns.
+
+Ranking por Volatilidade e Retorno
+Classifique as empresas por quem oferece maior retorno e menor risco.
+
+3. Relacionamento com o Mercado
+Comparação com o Índice NASDAQ
+Avalie o desempenho de cada ação em relação ao índice NASDAQ. Verifique se seguem padrões semelhantes ou se possuem desvios significativos.
+
+Beta (Sensibilidade ao Mercado)
+Calcule o beta de cada ação para entender sua sensibilidade em relação ao NASDAQ. Um beta maior que 1 indica maior sensibilidade.
+
+4. Insights Estratégicos
+Impacto de Lançamentos e Eventos
+Identifique eventos corporativos ou lançamentos (como novos consoles, jogos, ou produtos) e observe seu impacto nas ações.
+
+Lucros e Dividendos
+Avalie se as empresas que pagam dividendos apresentam menor volatilidade ou retornos mais estáveis.
+
+Setor de Tecnologia x Entretenimento
+Classifique empresas mais focadas em tecnologia (Microsoft, Sony) e em jogos (Ubisoft, Nintendo, EA) e avalie diferenças de comportamento no mercado.
+
+5. Previsões e Machine Learning
+Previsão de Preços
+Use algoritmos de regressão ou redes neurais para prever preços futuros com base nos dados históricos.
+
+Clustering
+Identifique padrões ocultos agrupando ações com comportamentos semelhantes em determinados períodos.
+
+Detecção de Anomalias
+Identifique mudanças anormais nos preços ou volumes que podem indicar eventos de mercado ou insiders trading.
