@@ -26,50 +26,39 @@ DIVIDE(
     SUM(Agrupado[Close/Last])
 )
 
+Analisar o capitulo 12 do Power Bi
 
 1. Análises de Desempenho Individual
+
 Tendências de Preço
-Avalie como os preços das ações variaram ao longo do tempo. Use gráficos como linhas de tendência ou médias móveis para identificar comportamentos gerais.
+Avalie como os preços das ações variaram ao longo do tempo. Use gráficos como linhas de tendência ou médias móveis para identificar comportamentos gerais. -> Feito
+
+O que foi feito:
+Criei a média entre as colunas High e Low para comparação e posteriormente criei a média móvel com medidas rápidas do Power Bi
+
 
 Volatilidade
-Calcule métricas como desvio padrão ou amplitude diária (máximo - mínimo) para entender o risco associado às ações.
+Calcule métricas como desvio padrão ou amplitude diária (máximo - mínimo) para entender o risco associado às ações. -> Feito
+
+O que foi feito:
+Criei a amplitude diária que é o High - o Low
+Também criei o desvio padrão, porem com calculo, pois o power bi não traz as mesmas informações como uma coluna qualquer. O desvio padrão foi a soma do High, Low, Open e Close dividido por 4, porém utilizando a medida DAX STDEVX.P.
+Também fiz o calculo da média geral destas mesmas colunas.
 
 Retorno Médio e Acumulado
-Determine o retorno médio diário, semanal, ou mensal, e calcule o retorno acumulado em períodos específicos.
+Determine o retorno médio diário, semanal, ou mensal, e calcule o retorno acumulado em períodos específicos. -> feito
+
+Efetuei a medida retorno diário com DAX para ter os valores de variação no percorrer dos anos.
 
 Volume de Negociação
 Analise se há períodos de maior ou menor negociação e explore correlações com eventos específicos.
 
-2. Comparações Entre Empresas
-Desempenho Relativo
-Compare o retorno das ações de cada empresa em períodos iguais para entender quem teve o melhor desempenho.
 
-Correlação entre Ações
-Avalie se os movimentos das ações estão relacionados, o que pode indicar dependências ou tendências comuns.
-
-Ranking por Volatilidade e Retorno
-Classifique as empresas por quem oferece maior retorno e menor risco.
-
-3. Relacionamento com o Mercado
-Comparação com o Índice NASDAQ
-Avalie o desempenho de cada ação em relação ao índice NASDAQ. Verifique se seguem padrões semelhantes ou se possuem desvios significativos.
-
-Beta (Sensibilidade ao Mercado)
-Calcule o beta de cada ação para entender sua sensibilidade em relação ao NASDAQ. Um beta maior que 1 indica maior sensibilidade.
-
-4. Insights Estratégicos
-Impacto de Lançamentos e Eventos
-Identifique eventos corporativos ou lançamentos (como novos consoles, jogos, ou produtos) e observe seu impacto nas ações.
-
-Lucros e Dividendos
-Avalie se as empresas que pagam dividendos apresentam menor volatilidade ou retornos mais estáveis.
-
-Setor de Tecnologia x Entretenimento
-Classifique empresas mais focadas em tecnologia (Microsoft, Sony) e em jogos (Ubisoft, Nintendo, EA) e avalie diferenças de comportamento no mercado.
-
-5. Previsões e Machine Learning
+2. Previsões e Machine Learning
 Previsão de Preços
 Use algoritmos de regressão ou redes neurais para prever preços futuros com base nos dados históricos.
+
+Usei a técnica ARIMA -> decorrer mais sobre isso.
 
 Clustering
 Identifique padrões ocultos agrupando ações com comportamentos semelhantes em determinados períodos.
