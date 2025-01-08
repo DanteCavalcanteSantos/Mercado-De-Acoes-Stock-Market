@@ -56,10 +56,4 @@ Analise se há períodos de maior ou menor negociação e explore correlações 
 2. Previsões e Machine Learning
 Previsão de Preços
 Use algoritmos de regressão ou redes neurais para prever preços futuros com base nos dados históricos.
-
-
-Clustering
-Identifique padrões ocultos agrupando ações com comportamentos semelhantes em determinados períodos.
-
-Detecção de Anomalias
-Identifique mudanças anormais nos preços ou volumes que podem indicar eventos de mercado ou insiders trading.
+Efetuei os treinamentos com Scikit-learn, aplicando por empresa.
